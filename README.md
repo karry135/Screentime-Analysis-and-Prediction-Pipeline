@@ -19,23 +19,3 @@ Automation with Apache Airflow:
 
 Integrates Apache Airflow to schedule and automate the data preprocessing pipeline.
 Runs daily to ensure up-to-date processing and saves cleaned data.
-Installation:
-Clone the repository:
-bash
-git clone https://github.com/karry135/screentime-analysis.git
-Install dependencies:
-bash
-pip install -r requirements.txt
-Install Apache Airflow:
-bash
-pip install apache-airflow
-Usage:
-Run preprocessing and model training manually:
-bash
-python data_preprocessing.py
-Trigger the Airflow DAG for automated runs:
-bash
-airflow dags trigger data_preprocessing
-Notes:
-Update the CSV file path in the code if necessary.
-The model can be improved with hyperparameter tuning using GridSearchCV or RandomizedSearchCV.
